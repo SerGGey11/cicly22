@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task8();
 
     }
 
@@ -11,7 +12,6 @@ public class Main {
         int salary = 15000;
         int total = 0;
         while (total < 2_459_000) {
-            for (int i = 1; i < 100; i++) ;
             total = total + salary;
             System.out.println(total);
         }
@@ -33,20 +33,23 @@ public class Main {
         int fertility = 17;
         int mortality = 8;
         for (int i = 1; i <= 10; i ++){
-            population = population+ population*17/1000 - mortality*8/1000;
+            population = population+ population*17/1000 - population*8/1000;
             System.out.println("Год " + i + " Численность населения составляет "
                     + population);
         }
     }
     public static void task4(){
         int sum = 15_000;
-        int many = 0;
         int i = 0;
-        for ( i = 1; i < 12_000_000 ; i +=  6){
+        for ( i = 1; i < 12 ; i +=  6){
             sum = sum + sum * 7 / 100;
-            sum = many + i / 1050;
             System.out.println("Месяц " + sum + " сумма " + i);
         }
     }
+    public static void task8(){
+        int kometa = 0;
+        for(int i = 1986; i <= 2123; i = i + 79);{
+        System.out.println();
     }
+    }}
 
