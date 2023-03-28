@@ -6,7 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
-        //    task7();
+        task7();
         task8();
 
     }
@@ -52,22 +52,37 @@ public class Main {
     public static void task5() {
         int sum = 15_000;
         int i = 0;
-        for (i = 1; i < 108; i += 6) {
-            if (i % 6 == 0) ;
+        for (i = 0; sum < 12000000; i ++) {
             sum = sum + sum * 7 / 100;
+            if (i % 6 == 0)
             System.out.println("Месяц " + i + " сумма " + sum );
         }
     }
     public static void task6(){
-
+      int sum = 15000;
+      int i = 0;
+       for (i = 1; i <= 108; i ++) {
+           sum = sum + sum * 7 / 100;
+           if (i % 6 == 0){
+               System.out.println(sum);
+       }
+    }}
+    public static void task7(){
+        int friday = 3;
+        for (int i = 1; i < 31; i ++) {
+            if (i % 7 == 0){
+                System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет»");
+            }
+        }
     }
-    public static void task8() {
+    public static void task8(){
         int currenYear = 2023;
         int currentYearMinus200 = currenYear - 200;
         int currentYearPlus100 = currenYear + 100;
-        for (int i = 1896; i < currentYearPlus100; i = i + 79) {
-            if (currentYearMinus200 < i) ;
+        for (int i = 0; i < currentYearPlus100; i = i + 79) {
+            if (currentYearMinus200 < i){
                 System.out.println(i);
             }
         }
     }
+}
