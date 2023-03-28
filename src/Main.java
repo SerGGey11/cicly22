@@ -36,7 +36,7 @@ public class Main {
         int fertility = 17;
         int mortality = 8;
         for (int i = 1; i <= 10; i ++){
-            population = population+ population*17/1000 - population*8/1000;
+            population = population+ population*fertility/1000 - population*mortality/1000;
             System.out.println("Год " + i + " Численность населения составляет "
                     + population);
         }
@@ -67,14 +67,15 @@ public class Main {
                System.out.println(sum);
        }
     }}
+
     public static void task7(){
-        int friday = 3;
-        for (int i = 1; i < 31; i ++) {
-            if (i % 7 == 0){
+        int friday = 5;
+        for (int i = friday; i <= 31; i += 7) {
+
                 System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет»");
             }
         }
-    }
+
     public static void task8(){
         int currenYear = 2023;
         int currentYearMinus200 = currenYear - 200;
